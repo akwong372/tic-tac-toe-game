@@ -25,6 +25,8 @@ $( document ).ready(function() {
     if ($aiPieces === '' && $playerPieces === ''){
       $("#x").addClass("selected");
       $("#x").removeClass("selection-buttons");
+      $("#boardTest").fadeTo(700, 0.8);
+      $("#piecesMenu").fadeTo(700, 0);
       $aiPieces = "O";
       $playerPieces = "X";
       }
@@ -34,6 +36,8 @@ $( document ).ready(function() {
      if ($aiPieces === '' && $playerPieces === ''){
       $("#o").addClass("selected");
       $("#o").removeClass("selection-buttons");
+      $("#boardTest").fadeTo(700, 0.8);
+      $("#piecesMenu").fadeTo(700, 0);
       $aiPieces = "X";
       $playerPieces = "O";
        }
@@ -83,6 +87,8 @@ $( document ).ready(function() {
          $("#x").addClass("selection-buttons");
          $("#o").removeClass("selected");
          $("#o").addClass("selection-buttons");
+         $("#boardTest").fadeTo(700, 0);
+         $("#piecesMenu").fadeTo(700, 0.8);
          $playerPieces = '';
          $aiPieces = '';
          $gameWon = 0;

@@ -22,25 +22,19 @@
 <h2 class='text-center cool-font'>Developed by Someone Really Cool</h2>
 <br>
 
-<div class="select-pieces container-fluid" style="float:left">
-  <br>
-  <h3 class="cool-font text-center"> X or O?</h3>
-  <table class="text-center">
-    <tr>
-      <td class="selection-buttons" id="x">X</td>
-      <td class="selection-buttons" id="o">O</td>
-    </tr>
-  </table>
-  <table>
-     <tr>
-      <td class="reset-button text-center" id="reset">Reset</td>
-    </tr>
-  </table>
-</div>
-
-
-<div class="square container-fluid">
-  <table class="text-center" id="board">
+<section class="play-space">
+    <section class="select-pieces container-fluid" id="piecesMenu">
+        <br>
+        <h3 class="cool-font text-center"> X or O?</h3>
+        <table class="text-center">
+          <tr>
+            <td class="selection-buttons" id="x">X</td>
+            <td class="selection-buttons" id="o">O</td>
+          </tr>
+        </table>
+      </section>
+<section class="square text-center" id="boardTest">
+  <table id="board">
     <tr>
       <td class="cell grid" id="0">&nbsp;&nbsp;</td>
       <td class="cell grid" id="1">&nbsp;&nbsp;</td>
@@ -57,7 +51,16 @@
       <td class="cell grid" id="8">&nbsp;&nbsp;</td>
     </tr>
   </table>
-</div>
+  <table>
+    <tr>
+     <td class="reset-button text-center" id="reset">Reset</td>
+   </tr>
+   <br>
+ </table>
+  </section>
+  
+</section>
+
 <div class="endgame container-fluid">
   <div class="text" id="winMessage" >You Are Winner</div>
 </div>

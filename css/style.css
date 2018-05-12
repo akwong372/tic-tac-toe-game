@@ -1,6 +1,12 @@
 body {
   background: url("https://images.unsplash.com/photo-1513692909856-2b596a899d32?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7b93e82d91df8cde619a05f03212617&auto=format&fit=crop&w=1958&q=80") no-repeat;
-  background-size: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+html{
+background-size: 100%
 }
 
 .cool-font {
@@ -8,13 +14,17 @@ body {
 }
 
 .square {
-  height: 430px;
+  height: 530px;
   width: 430px;
   background-color: #555;
-  opacity: 0.8;
-  margin: auto;
+  opacity: 0;
+  margin: 0 auto;
   border-radius: 20px;
-  padding-top: 14px;
+  padding: 14px;
+}
+
+.play-space{
+ position: relative;
 }
 
 td:hover {
@@ -33,33 +43,34 @@ td {
 }
 
 .select-pieces {
-  margin-left: 20em;
-  height: 300px;
+  margin:0 auto;
+  height: 180px;
   width: 200px;
   background-color: #555;
   opacity: 0.8;
   border-radius: 20px;
+  position: relative
 }
 
 .selection-buttons {
   margin-left: 20em;
-  height: 100px;
-  width: 100px;
-  font-size: 70px;
+  height: 80px;
+  width: 80px;
+  font-size: 55px;
 }
 
 .reset-button {
-  margin-left: 20em;
-  height: 100px;
-  width: 200px;
-  font-size: 50px;
+  padding: 10px;
+  height: 80px;
+  width: 400px;
+  font-size: 40px;
 }
 
 .selected {
   margin-left: 20em;
-  height: 100px;
-  width: 100px;
-  font-size: 70px;
+  height: 80px;
+  width: 80px;
+  font-size: 55px;
   border-radius: 20px;
   background-color: #212121;
 }
